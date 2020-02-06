@@ -2,6 +2,15 @@
 
 Sort your downloaded files to different subdirectories 
 
+## Prequalities
+
+install PM2
+```
+$ npm install pm2@latest -g
+# or
+$ yarn global add pm2
+```
+
 ## Usage
 
 ```
@@ -19,4 +28,11 @@ e.g.
           err => {
                   if (err) return console.error(err)
                   });
+```
+## Start a script
+
+from console:
+
+```
+pm2 start main.js
 ```
